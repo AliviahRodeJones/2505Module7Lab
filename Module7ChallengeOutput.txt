@@ -1,0 +1,72 @@
+-- Task 1
+SELECT CompanyName, Phone FROM Shippers;
+  CompanyName         Phone
+----------------  --------------
+Speedy Express    (503) 555-9831
+United Package    (503) 555-3199
+Federal Shipping  (503) 555-9931
+
+-- Task 2
+SELECT CompanyName, City, Country FROM customers 
+ORDER BY City LIMIT 5;
+       CompanyName             City      Country
+--------------------------  -----------  -------
+Wonderful Widgets                        USA
+Drachenblut Delikatessen    Aachen       Germany
+Rattlesnake Canyon Grocery  Albuquerque  USA
+Old World Delicatessen      Anchorage    USA
+Galería del gastrónomo      Barcelona    Spain
+
+-- Task 3
+SELECT OrderID, OrderDate, ShipCity FROM Orders
+WHERE CustomerID = 'ANATR';
+OrderID  OrderDate    ShipCity
+-------  ----------  -----------
+  10308  1996-09-18  México D.F.
+  10625  1997-08-08  México D.F.
+  10759  1997-11-28  México D.F.
+  10926  1998-03-04  México D.F.
+
+-- Task 4
+SELECT c.CompanyName, o.OrderDate FROM Customers AS c 
+JOIN Orders AS o ON c.CustomerID = o.CustomerID 
+WHERE c.CompanyName = 'Around the Horn' LIMIT 5;
+  CompanyName    OrderDate
+---------------  ----------
+Around the Horn  1996-11-15
+Around the Horn  1996-12-16
+Around the Horn  1997-02-21
+Around the Horn  1997-06-04
+Around the Horn  1997-10-16
+
+-- Task 5
+DELETE FROM Customers WHERE CustomerID = 'STUD1';
+-- Deletes the row with the ID STUD1
+
+INSERT INTO Customers (CustomerID, ContactName, Companyname, Country)
+VALUES ('STUD1', 'Aliviah Rode-Jones', 'My Company', 'USA');
+-- Inserts a new row into the customers table. 
+
+SELECT * FROM Customers WHERE CustomerID = 'STUD1';
+CustomerID  CompanyName     ContactName      ContactTitle  Address  City  Region  PostalCode  Country  Phone  Fax
+----------  -----------  ------------------  ------------  -------  ----  ------  ----------  -------  -----  ---
+STUD1       My Company   Aliviah Rode-Jones                                                   USA
+-- Tests the new row was inserted. 
+
+-- Task 6
+UPDATE Customers SET Phone = '555-0100'
+WHERE CustomerID = 'STUD1';
+-- Updates a row in the database with the STUD1 ID. 
+
+SELECT CustomerID, ContactName, Phone FROM Customers 
+WHERE CustomerID = 'STUD1';
+CustomerID     ContactName       Phone
+----------  ------------------  --------
+STUD1       Aliviah Rode-Jones  555-0100
+-- Checks the data was updated correctly. 
+
+-- Task 7
+DELETE FROM Customers WHERE CustomerID = 'STUD1';
+-- Deletes the 'STUD1' row.
+SELECT * FROM Customers WHERE CustomerID = 'STUD1';
+-- Checks that the 'STUD1' value was deleted.
