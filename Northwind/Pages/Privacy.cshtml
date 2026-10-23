@@ -3,6 +3,11 @@
 @{
     ViewData["Title"] = "Privacy Policy";
 }
+@*Title of the page.*@
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<p>Last updated: @DateTime.Now.ToString("MMMM dd, yyyy")</p>
+@*Uses the DateTime method. Prints the current date each time the page is accessed. *@
+
+<p>At Northwind Traders, we respect your privacy and are committed to protecting your personal data.</p>
+@*A short paragraph explaining the businesses privacy policy.*@

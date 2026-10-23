@@ -1,0 +1,34 @@
+﻿@page
+@model ProductsModel
+
+@{
+    ViewData["Title"] = "Northwind Products";
+}
+// Webpage title. 
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Unit Price</th>
+            @*Three table column headers on the table. Explain what information is in each column*@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.Products)
+        {
+            <tr>
+                <td>@product.ProductName</td>
+                @*The first column is populated by the product name.*@
+                <td>@product.CategoryName</td>
+                @*The second column is populated by the product category. *@
+                <td>@product.UnitPrice.ToString("C")</td>
+                @*The third column is populated with the unit price. *@
+            </tr>
+        }
+    </tbody>
+</table>
+@*This page displays a table with three columns (Product Name, Category and Price) containing all of the products from the _____ query*@

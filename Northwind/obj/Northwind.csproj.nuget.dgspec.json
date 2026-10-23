@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/2505Module7Lab/Northwind/Northwind.csproj": {}
+    "C:\\Users\\alivi_98pvl\\OneDrive - Minnesota State\\4-Itec 2505\\2505Module7Lab\\Northwind\\Northwind.csproj": {}
   },
   "projects": {
-    "/workspaces/2505Module7Lab/Northwind/Northwind.csproj": {
+    "C:\\Users\\alivi_98pvl\\OneDrive - Minnesota State\\4-Itec 2505\\2505Module7Lab\\Northwind\\Northwind.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/2505Module7Lab/Northwind/Northwind.csproj",
+        "projectUniqueName": "C:\\Users\\alivi_98pvl\\OneDrive - Minnesota State\\4-Itec 2505\\2505Module7Lab\\Northwind\\Northwind.csproj",
         "projectName": "Northwind",
-        "projectPath": "/workspaces/2505Module7Lab/Northwind/Northwind.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/2505Module7Lab/Northwind/obj/",
+        "projectPath": "C:\\Users\\alivi_98pvl\\OneDrive - Minnesota State\\4-Itec 2505\\2505Module7Lab\\Northwind\\Northwind.csproj",
+        "packagesPath": "C:\\Users\\alivi_98pvl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alivi_98pvl\\OneDrive - Minnesota State\\4-Itec 2505\\2505Module7Lab\\Northwind\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\alivi_98pvl\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
